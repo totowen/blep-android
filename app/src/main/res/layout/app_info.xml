@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/info_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+       <Button
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:id="@+id/btn_back"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="80dp"
+           android:background="@drawable/back_style"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应用详情"
+            android:textSize="40sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            />
+
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/xian2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/white" />
+    <LinearLayout
+        android:id="@+id/app_info_linearlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_appIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/iv_appicon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_appName"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_appIcon"
+                android:layout_toRightOf="@+id/iv_appIcon"
+                android:text="认识拼音"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewFlipper"
+                android:layout_gravity="right" />
+
+            <RatingBar
+                android:id="@+id/app_ratingbar"
+                style="@style/MyRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="0"/>
+
+            <TextView
+                android:id="@+id/tv_developer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_start"
+                android:layout_below="@+id/iv_start"
+                android:layout_marginLeft="5dp"
+                android:text="北京新东方教育有限公司"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_setup"
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/normal_button_style"
+        android:text="安装"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/xian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="220dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xian"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="290dp"
+            android:layout_height="380dp"
+            android:layout_marginLeft="19dp"
+            android:layout_toRightOf="@+id/tv_appName"
+            android:src="@drawable/canves" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="290dp"
+            android:layout_height="380dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/iv_1"
+            android:src="@drawable/canves" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/ll1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/useless_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="功能介绍"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:fadeScrollbars="false">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,273 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".App_list_new"
+    android:id="@+id/main_layout1"
+    android:background="@mipmap/mainbg"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/applist_item_hili">
+
+        </SearchView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/back_style" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="教育云资源"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/toggle_you"
+            android:text="修改密码"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+
+    <!-- 底部四个导航按钮 -->
+    <LinearLayout
+        android:id="@+id/bottom_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <ToggleButton
+            android:id="@+id/btn_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOn="学前"
+            android:textOff="学前"
+            android:checked="false"
+            android:background="@drawable/toggle_you"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            />
+
+        <ToggleButton
+            android:id="@+id/btn_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOn="小学"
+            android:textOff="小学"
+            android:checked="false"
+            android:background="@drawable/toggle_you"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            />
+
+        <ToggleButton
+            android:id="@+id/btn_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOn="初中"
+            android:textOff="初中"
+            android:checked="false"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/toggle_you"
+            android:textColor="@color/black"
+            />
+
+        <ToggleButton
+            android:id="@+id/btn_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOn="高中"
+            android:textOff="高中"
+            android:checked="false"
+
+            android:background="@drawable/toggle_you"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffffff"
+        />
+    <LinearLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/applinear_style"
+        >
+        <ToggleButton
+            android:id="@+id/btn_one"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textOn="教育"
+            android:textOff="教育"
+            android:checked="false"
+            android:background="@drawable/toggle_me"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp"
+            />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:layout_gravity="center_horizontal"
+
+            />
+        <ToggleButton
+            android:id="@+id/btn_two"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textOn="游戏"
+            android:textOff="游戏"
+            android:checked="false"
+            android:background="@drawable/toggle_me"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp"
+            />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:layout_gravity="center_horizontal"
+            />
+        <ToggleButton
+            android:id="@+id/btn_three"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textOn="工具"
+            android:textOff="工具"
+            android:checked="false"
+            android:background="@drawable/toggle_me"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp"
+            />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:layout_gravity="center_horizontal"
+            />
+        <ToggleButton
+            android:id="@+id/btn_four"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textOn="体育"
+            android:textOff="体育"
+            android:checked="false"
+            android:background="@drawable/toggle_me"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp"
+            />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:layout_gravity="center_horizontal"
+            />
+        <ToggleButton
+            android:id="@+id/btn_five"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textOn="音乐"
+            android:textOff="音乐"
+            android:checked="false"
+            android:background="@drawable/toggle_me"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp"
+            />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:layout_gravity="center_horizontal"
+            />
+        <ToggleButton
+            android:id="@+id/btn_six"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textOn="娱乐"
+            android:textOff="娱乐"
+            android:checked="false"
+            android:background="@drawable/toggle_me"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp"
+            />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:layout_gravity="center_horizontal"
+            />
+        <ToggleButton
+            android:id="@+id/btn_seven"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textOn="图书"
+            android:textOff="图书"
+            android:checked="false"
+            android:background="@drawable/toggle_me"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp"
+            />
+    </LinearLayout>
+
+
+
+
+    <!-- VIewPager 主要是加载内容的 -->
+    <com.tos.blepdemo.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_style"
+        />
+
+
+</LinearLayout>

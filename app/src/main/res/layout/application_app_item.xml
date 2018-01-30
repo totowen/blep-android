@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dip"
+    android:background="@color/transparent"
+    >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/application_app_icon"
+        android:src="@drawable/icon"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip" />
+
+    <TextView
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/application_app_icon"
+        android:id="@+id/application_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:text="程序名称"
+        />
+
+    <TextView
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@id/application_app_icon"
+        android:layout_below="@id/application_app_name"
+        android:id="@+id/application_app_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#88000000"
+        android:textSize="16sp"
+        android:text="公司"
+        />
+    <Button
+        android:id="@+id/application_setup"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_centerVertical="true"
+        android:text="详情"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:background="@drawable/normal_button_style"
+        android:layout_width="85dp"
+        android:layout_height="40dp"/>
+
+    <RatingBar
+        android:id="@+id/application_star"
+        style="@style/MyRatingBar"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/application_app_icon"
+        android:layout_toEndOf="@+id/application_app_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0"/>
+</RelativeLayout>

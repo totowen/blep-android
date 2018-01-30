@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BLEPPHONE</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="pinyin">←认识拼音</string>
+    <string name="xueqian">学前</string>
+    <string name="primary">小学</string>
+    <string name="junior">初中</string>
+    <string name="high">高中</string>
+    <string name="install">设置</string>
+    <string name="back">返回</string>
+    <string name="study">学习</string>
+    <string name="game">游戏</string>
+    <string name="gongju">工具</string>
+    <string name="read">阅读</string>
+    <string name="music">音乐</string>
+    <string name="other">其他</string>
+    <string name="txt">asda就是看；了a口大家来看；了asda就是垃圾啊算了肯德基阿拉山口大家来看；了asda就是垃圾啊算了肯德基阿拉山口大家来看；了asda就是垃圾啊算了肯德基阿拉山口大家来看；了asda就是垃圾啊算了肯德基阿拉山口大家来看；了</string>
+
+    <string name="title_alert">请输入密码！</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="ok_">确定</string>
+    <string name="cancel_">取消</string>
+    <string name="title_alert_">设置网址</string>
+    <string name="IP_address">请输入IP地址</string>
+    <string name="IP">IP_Address</string>
+    <string name="defaultIP">重新设置IP地址</string>
+    <string name="search_hint">应用搜索</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>

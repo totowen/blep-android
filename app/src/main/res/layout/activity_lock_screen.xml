@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" 
+     
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <TextView
+        android:id="@+id/hlep_text"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:text="对不起，该时段无法开启此软件或被家长锁定。请在允许的时间内开启。"
+        android:textSize="20sp"
+        android:textColor="#ff476706"
+        />
+       <!--<EditText-->
+
+             <!--android:textSize="18.0sp" -->
+            <!--android:textColorHint="#ff476706" -->
+            <!--android:id="@+id/et_password" -->
+            <!--android:background="@drawable/input" -->
+            <!--android:layout_width="200dip" -->
+            <!--android:layout_height="wrap_content"-->
+           <!--android:layout_marginTop="20dp"-->
+            <!--android:hint="请输入密码" -->
+            <!--android:gravity="center"-->
+            <!--android:password="true" />-->
+        <Button android:textSize="18.0sp" 
+            android:layout_marginTop="50dip"
+            android:textColor="#ff476706" 
+            android:background="@drawable/input" 
+            android:onClick="click"
+	        android:id="@+id/ok"
+             android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            
+            android:text="确定" />
+    
+</LinearLayout>

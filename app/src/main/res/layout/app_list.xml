@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/title_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/gray">
+
+        <ToggleButton
+            android:id="@+id/toggleButton11"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+
+            android:checked="true"
+
+            android:textOff="@string/study"
+            android:textOn="@string/study" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton12"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+
+            android:checked="false"
+            android:textOff="@string/game"
+            android:textOn="@string/game" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton13"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+
+            android:checked="false"
+            android:textOff="@string/gongju"
+            android:textOn="@string/gongju" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton14"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+
+            android:checked="false"
+            android:textOff="@string/read"
+            android:textOn="@string/read" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton15"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+
+            android:checked="false"
+            android:textOff="@string/music"
+            android:textOn="@string/music" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton16"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+
+            android:checked="false"
+            android:textOff="@string/other"
+            android:textOn="@string/other" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgv_overtab"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/red" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="81dp" />
+</RelativeLayout>

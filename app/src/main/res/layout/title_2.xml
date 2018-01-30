@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/title_background" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+
+            android:background="@color/transparent"
+            android:text="@string/back"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/test3"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="580dp"
+            android:background="@color/transparent"
+            android:text="详情"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/local_app"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1060dp"
+            android:background="@drawable/bg_1"
+            android:text="安装应用"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

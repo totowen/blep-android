@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title_color">#ff725d5a</color>
+    <color name="btn_bg">#ffdddad8</color>
+    <color name="text_color">#ff725d5a</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#ffC6C6C6</color>
+    <color name="circle">#ffe5e1e1</color>
+    <color name="tabs_title_color"> #FFFFFF </color>
+    <color name="tabs_color"> #81D4FA </color>
+     <color name="headerbar_color"> #81D4FA</color>
+     <color name="headerbar_selected_tab_color"> #34b4e3 </color>
+  <color name="headerbar_title_color"> #FFFFFF </color>
+   <drawable name="chose_item">#ffffff</drawable>  
+    <drawable name="unchose_item">#725d5a</drawable>  
+    <color name="blue">#552d79ff</color>
+    <color name="black"> #000000</color>
+    <color name="deep_gray"> #808080</color>
+     <color name="applist_item_hili">#36434b</color>
+     <color name="transparent">#00000000</color>
+    <color name="bac">#55000000</color>
+    <color name="yellow">#EEEE00</color>
+    <color name="red">#FF3030</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorbg">#CCCCCC</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="searchBar">#CCCCCC</color>
+</resources>
